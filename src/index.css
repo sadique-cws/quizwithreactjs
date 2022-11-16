@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app{
+  background-color: #00aeff;
+  width: 450px;
+  min-height: 200px;
+  gap:20px;
+  padding: 20px;
+   border-radius: 10px;
+   display: flex;
+  justify-content: center;
+}
+
+.score-section{
+  color: white;
+  font-size: 20px;
+}
+
+.question-section{
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+  flex: 2;
+}
+.answer-section{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  flex: 1;
+  align-items: stretch;
+}
+.answer-section>button, .btn-tryagain{
+  border: 0;
+  padding:10px 5px;
+  border-radius: 5px;
+  border:1px solid black;
+  font-size:22px;
+}
+.answer-section>button:hover, .btn-tryagain:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
